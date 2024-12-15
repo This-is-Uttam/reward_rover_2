@@ -21,12 +21,13 @@
 
             <ImageView
                 android:id="@+id/adPosterImg"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/placeholder"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,14 +36,13 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
                 android:fontFamily="@font/alatsi_regular"
                 android:singleLine="true"
                 android:text="Advertisement Title"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toStartOf="@+id/adRewardCoin"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/adPosterImg" />
+                app:layout_constraintStart_toEndOf="@+id/adPosterImg"
+                app:layout_constraintTop_toTopOf="@+id/adPosterImg" />
 
             <TextView
                 android:id="@+id/adRewardCoin"
@@ -60,10 +60,9 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/adClaimBtn"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:fontFamily="@font/alatsi_regular"
                 android:text="Claim Now"
@@ -75,7 +74,7 @@
                 app:cornerRadius="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/adDesc"
                 app:layout_constraintTop_toBottomOf="@+id/adDesc" />
 
             <TextView
